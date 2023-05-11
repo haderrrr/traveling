@@ -462,7 +462,7 @@ else if (window.location.href.includes("home")) {
       //for local host
       // window.location.href = "/home.html";
       // for github
-      window.location.href = "/traveling1/home.html";
+      window.location.href = "/traveling/home.html";
     } else {
       formErrors.innerHTML = "Please enter valid data";
     }
