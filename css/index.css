@@ -24,12 +24,9 @@ body{
     --main-color: #1c4e53;
     --color2: #db930ef1;
     --hover-color2: #ca880cca;
-    --main-duration:0.5s;
-    scroll-behavior: smooth;
 }
 
 /*simple frame work*/
-
 
 /* to center elments */
 .container{
@@ -91,38 +88,11 @@ body{
     max-width: 100%;
 }
 
-
-/* margin classes*/
-.my-10{
-    margin: 10px 0;
-}
-
-.my-20{
-    margin: 20px 0;
-}
-.my-40{
-    margin: 40px 0;
-}
-
-
 /*padding classrs*/
-.py-10px{
-    padding: 10px 0;
-}
-.py-20px{
-    padding: 20px 0;
-}
-.py-30px{
-    padding: 30px 0;
-}
-.py-40px{
-    padding: 40px 0;
-}
+
 .py-60px{
     padding: 60px 0;
 }
-
-
 
 /*start components*/ 
 .main-title{
@@ -133,6 +103,7 @@ body{
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .main-btn {
     display: block;
     width: fit-content;
@@ -160,15 +131,12 @@ body{
     background-color: #fff;
     padding: 20px 0;
 }
-
 .logo-container .logo{
     color:#3a7e85;
     font-weight: 900;
 }
-
 .logo-container .logo-link{
     display: block;
-
 }
 
 .nav-list .nav-item {
@@ -176,27 +144,21 @@ body{
 }
 .nav-list .nav-item .nav-item-link{
     transition: 0.5s linear;
-
 }
 .nav-list .nav-item:last-child{
     cursor: pointer;
 }
 .nav-list .nav-item .nav-item-link:hover{
     color:  var(--color2);
-    
 }
-
 
 /*make header responsive */
 @media screen and (max-width: 768px) {
     .header .logo-container,.nav{
         width: 90%;
         text-align: center;
-        
     }
-    
-      .header 
-      .flex-column-tablet {
+      .header .flex-column-tablet {
         gap: 30px;
       }
     .header .nav-item-link{
@@ -206,21 +168,6 @@ body{
 
 /*end header*/
 
-/*start name*/
-.name-container{
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    padding: 20px;
-    background-color: #050505e3;
-    color: white;
-    border-radius: 10px;
-    font-size: 22px;
-    z-index: 10000;
-    display: none;
-
-}
-/*end name*/
 
 /*start hero section*/
 .hero-section{
@@ -235,7 +182,6 @@ body{
 .hero-section .container{
     height: 100%;
 }
-
 
 .hero-section .overlay {
     position: absolute;
@@ -280,10 +226,7 @@ body{
     .hero-section .main-btn{
         padding: 10px;
         font-size:18px
-
     }
-
-    
 }
 
 
@@ -303,6 +246,7 @@ body{
     color: rgba(255, 255, 255, 0.733);
     line-height: 1.4;
     font-size: 16px;
+    margin: 40px 0;
 }
 
 .achievements .achievements-list{
@@ -328,27 +272,25 @@ body{
     .achievements .achievements-image-container{
         display: none;
     }
-
     .achievements .achievements-content-container {
-        width: 100%;
         text-align: center;
+        width: fit-content;
+        margin: 0 auto;
     }
-    .achievements .achievements-content-description,.achievements-list
+    .achievements
+    .achievements-content-description,.achievements-list
     {
         margin: 20px auto;
         width: 80%;
     }
-}
-
-
-@media screen and (max-width: 768px) {
-    .achievements .achievements-list {
+    .achievements .achievements-list{
         display: grid;
         grid-template-columns: repeat(2, 110px);
         gap: 15px;
-        width: fit-content;
+         width: fit-content;
         margin: 0 auto;
     }
+  
 }
 
 /* end achievements section */
@@ -363,22 +305,18 @@ body{
 .features-container{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-
 }
 
 /*for tablets*/
 @media screen and (max-width: 768px) {
-    
     .features-container{
         max-width: 100%;
         grid-template-columns: 1fr;
         margin: 0 auto;
     }
-
     .features-gif{
         max-width: 90%;
     }
-
 }
 
 
@@ -450,9 +388,7 @@ body{
 .testimonies{
     background: var(--main-color);
     color: white;
-
 }
-
 
 .testimonies-page{
     padding: 30px 0;
@@ -479,14 +415,8 @@ body{
     margin-bottom: 7px;
 }
 .testimonies-item-head .head-info-description{
-        font-size: 16px;
-        color: black;
-}
-
-.testimonies-item-body{
-    font-size: 15px;
-    line-height: 1.5;
-    color: #333;
+    font-size: 16px;
+    color: black;
 }
 
 .head-image{
@@ -496,13 +426,18 @@ body{
     margin-right: 10px;
     object-fit: cover;
 }
+.testimonies-item-body{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
 
 /* end testimonies section */
 
 /*start countries  section*/
 .countries{
     background-color: var(--main-color);
-
 }
 
 .countries-container{
@@ -531,8 +466,8 @@ body{
 }
 
 .countries-item .countries-item-image {
-    max-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .countries-item .countries-item-content {
     position: absolute;
@@ -733,9 +668,23 @@ body{
 
 .hotel-image-container img{
     border-radius: 4px;
-
-
 }
+
+.help-section {
+    background-color: var(--main-color);
+    min-height: 300px;
+}
+
+.help-section .container {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.help-section .container p {
+    font-size: 22px;
+    color: white;
+}
+
 /*make hotel responsive*/
 
 @media screen and (max-width: 768px) {
@@ -772,7 +721,6 @@ body{
     margin: 0 auto;
 }
 
-
 .account-form input {
  border: none;
  outline: none;
@@ -799,15 +747,4 @@ body{
     font-size: 22px;
 }
 
-.help-section{
-    background-color: var(--main-color);
-    min-height: 300px;
-}
-.help-section .container{
-    flex-direction: column;
-    gap: 30px;
-}
-.help-section .container p{
-    font-size: 22px;
-    color: white;
-}
+
