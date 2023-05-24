@@ -28,7 +28,7 @@ const countries = [
         hotels: [
           {
             name: "Al Masa Hotel",
-            img: "images/egypt/Cairo/al-masa-hotel.jpg",
+            img: "images/egypt/cairo/al-masa-hotel.jpg",
             description:
               "ou are invited to escape the noise and the pollution and to enjoy the peaceful atmosphere on Al Masa spectacular heights. While sitting under a pergola surrounded by the stunning nature enjoy beverage of choice that are served to match the moment. It is the spot for a quiet",
           },
